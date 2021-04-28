@@ -9,12 +9,27 @@
 import UIKit
 
 class ViewController: UIViewController {
+	
+	let diceFaces = [#imageLiteral(resourceName: "DiceOne"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceFour"), #imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceSix")]
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
+	// MARK: - IBOutlets
+	
+	@IBOutlet weak var diceOneImageView: UIImageView!
+	@IBOutlet weak var diceTwoImageView: UIImageView!
+	
+	// MARK: - Life Cycle
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+	}
+	
+	// MARK: - IBActions
+	
+	@IBAction func rollButtonPressed(_ sender: Any) {
+		diceOneImageView.image = diceFaces.randomElement()!
+		diceTwoImageView.image = diceFaces.randomElement()!
+	}
+	
 
 }
 
