@@ -16,11 +16,21 @@ class ViewController: UIViewController {
 	
 	@IBOutlet weak var diceOneImageView: UIImageView!
 	@IBOutlet weak var diceTwoImageView: UIImageView!
+	@IBOutlet weak var rollButton: UIButton!
 	
 	// MARK: - Life Cycle
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		setupUI()
+	}
+	
+	// MARK: - Functionality
+	
+	func setupUI() {
+		rollButton.layer.cornerRadius = 15
+		diceOneImageView.layer.cornerRadius = 15
+		diceTwoImageView.layer.cornerRadius = 15
 	}
 	
 	// MARK: - IBActions

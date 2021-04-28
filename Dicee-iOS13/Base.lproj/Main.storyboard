@@ -38,11 +38,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdx-GH-ktB">
-                                <rect key="frame" x="157" y="745" width="100" height="50"/>
+                                <rect key="frame" x="50" y="745" width="314" height="50"/>
                                 <color key="backgroundColor" red="0.60599207879999994" green="0.11067584900000001" blue="0.12154077739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="mx1-Pv-ZLR"/>
-                                    <constraint firstAttribute="width" constant="100" id="owe-EN-abG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Roll">
@@ -58,11 +57,12 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="7Rt-jW-gZD" secondAttribute="bottom" id="4du-Fi-dJd"/>
                             <constraint firstAttribute="trailing" secondItem="7Rt-jW-gZD" secondAttribute="trailing" id="7Rf-bp-hz6"/>
-                            <constraint firstItem="bdx-GH-ktB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EBe-VE-nX7"/>
+                            <constraint firstItem="bdx-GH-ktB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="CvY-n9-NSM"/>
                             <constraint firstItem="7Rt-jW-gZD" firstAttribute="top" secondItem="iuY-av-Pfp" secondAttribute="bottom" constant="-241" id="HS5-tH-5cq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TOe-CW-Wfz" secondAttribute="trailing" constant="40" id="JOX-kv-Aop"/>
                             <constraint firstItem="7Rt-jW-gZD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MWR-dV-bAY"/>
                             <constraint firstItem="bdx-GH-ktB" firstAttribute="top" secondItem="7Rt-jW-gZD" secondAttribute="bottom" constant="-151" id="NKm-Qm-9kr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bdx-GH-ktB" secondAttribute="trailing" constant="50" id="NUx-wL-T3u"/>
                             <constraint firstItem="7Rt-jW-gZD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="T8k-gt-lYJ"/>
                             <constraint firstItem="TOe-CW-Wfz" firstAttribute="top" secondItem="iuY-av-Pfp" secondAttribute="bottom" constant="213" id="XrX-gC-XPX"/>
                             <constraint firstItem="436-T4-azv" firstAttribute="top" secondItem="iuY-av-Pfp" secondAttribute="bottom" constant="213" id="gEd-mK-3fc"/>
@@ -73,6 +73,7 @@
                     <connections>
                         <outlet property="diceOneImageView" destination="436-T4-azv" id="rWE-R9-ANp"/>
                         <outlet property="diceTwoImageView" destination="TOe-CW-Wfz" id="us3-0J-eoa"/>
+                        <outlet property="rollButton" destination="bdx-GH-ktB" id="H6Z-2s-2QY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
